@@ -1,0 +1,173 @@
+
+
+.panel-pink {
+  border-color: #e43350;
+}
+.panel-pink > .panel-heading {
+  color: #fff;
+  background-color: #ea5870;
+  border-color: #e43350;
+}
+.panel-pink > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #e43350;
+}
+.panel-pink > .panel-heading .badge {
+  color: #d9edf7;
+  background-color: #ea5870;
+}
+.panel-pink > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #e43350;
+}
+
+
+div[class*=col]{
+	padding: 0!important;
+}
+
+
+
+/*/////////////////////////*/
+
+@keyframes playAni{
+	33.333%{transform: translateY(0%);}
+	66.666%{transform: translateY(100%);}
+	100%{transform: translateY(0%);}
+}
+._play span{
+	animation: playAni 1s linear 0s infinite alternate;
+}
+
+
+/*/////////////////////////////*/
+
+
+html,body{
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+
+.headInfo{
+	height:60px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+
+
+header .panel-pink{
+	margin: 0!important;
+}
+header,footer{
+	width: 100%;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+footer{
+	height: 80px;
+	/*background: #e43350;*/
+}
+section{
+	width: 100%;
+	flex-grow: 1;
+	/*background: red;*/
+	margin: 15px 0;
+	padding: 0 40px!important;
+	overflow: scroll;
+}
+.infoBox img{
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.infoBox .playAni{
+	height: 100px;
+	/*background: red;*/
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+}
+.infoBox .playAni span{
+	display: block;
+	width: 3%;
+	height: 100%;
+	background: #ea5870;
+}
+
+
+.songList li .label{
+	float: right;
+}
+
+
+
+.proBar{
+	width: 30vw;
+	height: 10px;
+	border-radius:5px;
+	background: #31b0d5;
+	display: inline-block;
+	margin: 0px 15px;
+	position: relative;
+	cursor: pointer;
+}
+.proBar p{
+	width: 0px;
+	height: 10px;
+	border-radius:5px;
+	background: #207a94;
+}
+.proBar div{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: -3px;
+	
+}
+.proBar a{
+	position: absolute;
+	right: 0;
+	top: -20px;
+	color: #fff;
+}
+.proBar a:hover{
+	text-decoration: none;
+}
+
+
+
+
+.volBar{
+	width: 10vw;
+	height: 10px;
+	border-radius:5px;
+	background: #31b0d5;
+	display: inline-block;
+	margin: 0px 15px;
+	position: relative;
+	cursor: pointer;
+}
+.volBar p{
+	width: 0px;
+	height: 10px;
+	border-radius:5px;
+	background: #207a94;
+}
+.volBar div{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: -3px;
+	
+}
