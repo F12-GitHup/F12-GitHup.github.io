@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="./boot/css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/music.css"/>
+	</head>
+	<body>
+		<audio src="" id="audio"></audio>
+		<header class="container-fluid">
+			<div class="panel panel-pink">
+				<div class="panel-heading clearfix">
+					<h2 class="pull-left">古德音乐</h2>
+					<p class="pull-right headInfo">听音乐，敲代码，逍遥自在</p>
+				</div>
+			</div>
+		</header>
+		
+		
+		<section class="container-fluid">
+			<div class="panel panel-pink col-xs-5">
+				<div class="panel-heading">
+					歌曲列表
+				</div>
+				<div class="panel-body">
+					<ul class="list-group songList">
+						
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-pink col-xs-5 col-xs-offset-2 infoBox">
+				<div class="panel-body">
+					<img src="img/1.jpg" class="img-thumbnail songImg"/>
+					<h4 class="text-center songName">古德</h4>
+					<h5 class="text-center songAuthor">GOOD</h5>
+					<!--/_play/-->
+					<p class="playAni ">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</p>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="container-fluid">
+			<div class="panel panel-pink">
+				<div class="panel-heading clearfix">
+					<button id="prev" class="btn btn-info glyphicon glyphicon-backward"></button>
+					<!--glyphicon-pause-->
+					<button id="play" class="btn btn-info glyphicon glyphicon-play"></button>
+					<button id="next" class="btn btn-info glyphicon glyphicon-forward"></button>
+					<div class="proBar">
+						<p></p>
+						<div></div>
+						<a><span class="nowTime">00:00</span>/<span class="allTime">00:00</span></a>
+					</div>
+					<!--repeat  refresh  random-->
+					<button id="style" class="btn btn-info glyphicon glyphicon-refresh"></button>
+					<div class="volBar">
+						<p></p>
+						<div></div>
+					</div>
+					
+				</div>
+				
+				
+				
+			</div>
+		</footer>
+		
+		
+		
+		
+		
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/music.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
